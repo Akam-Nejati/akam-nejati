@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <div class="p-8 w-[27rem] rounded-3xl border border-zinc-600 h-[calc(100vh-2rem)] flex flex-col justify-between">
-            <div class="flex justify-between items-center">
-                <span class="text-5xl">Akam Nejati</span>
+    <div class="flex justify-between">
+        <div class="p-8 w-[30rem] rounded-3xl border border-zinc-800 shadow-xl h-[calc(100vh-2rem)] flex flex-col justify-between mr-4">
+            <div class="flex justify-between items-top">
+                <span class="text-4xl">Akam Nejati</span>
                 <div class="flex flex-col">
-                    <span class="text-xl w-[9rem]">{{ additionalWork }}</span>
+                    <span class="text-xl w-[12rem]">{{ additionalWork }}</span>
                 </div>
             </div>
             <div class="w-full h-[20rem] bg-slate-300 rounded-3xl overflow-hidden">
@@ -13,6 +13,7 @@
             <div class="flex flex-col">
                 <span class="text-3xl">{{ email }}</span>
                 <span class="text-3xl mt-4">{{ City }}</span>
+                <span class="text-3xl mt-4">born in 2006</span>
             </div>
             <div class="">
                 <p class="text-xl text-center text-gray-400">© 2023 Akam All Rights Reserved</p>
@@ -24,9 +25,14 @@
                     </a>
                 </div>
             </div>
-            <a class="w-full py-3 rounded-full bg-green-400 text-zinc-900 text-xl flex justify-center items-center" href="https://t.me/Akam_320">HIRE ME!</a>
+            <a class="w-full py-3 rounded-full bg-green-400 text-zinc-900 text-xl flex justify-center items-center" href="https://t.me/Akam_320">
+                <Icon name="line-md:email-twotone" class="text-2xl mr-2"/>
+                <span>
+                    HIRE ME!
+                </span>
+            </a>
         </div>
-        <div>
+        <div class="w-[calc(100%-31rem)]">
             <slot />
         </div>
     </div>

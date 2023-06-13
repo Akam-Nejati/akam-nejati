@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_my_social_networks_social_networks",
+  "info": {
+    "displayName": "SocialNetworks"
+  },
+  "options": {},
+  "attributes": {
+    "myGithub": {
+      "displayName": "Github",
+      "type": "component",
+      "repeatable": false,
+      "component": "my-github.github"
+    }
+  }
+}

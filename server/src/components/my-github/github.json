@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_my_github_githubs",
+  "info": {
+    "displayName": "Github",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "githubLink": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
