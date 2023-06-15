@@ -18,6 +18,13 @@
       "repeatable": true,
       "component": "about-me.about",
       "required": true
+    },
+    "gettingStarted": {
+      "displayName": "Getting started",
+      "type": "component",
+      "repeatable": true,
+      "component": "getting-started.getting-started",
+      "required": true
     }
   }
 }
