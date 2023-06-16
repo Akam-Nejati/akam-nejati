@@ -4,11 +4,13 @@ const { data: content }: { data: Ref<any> } = await useFetch("http://localhost:1
     "populate[0]": "*",
     "populate[1]": "skils",
     "populate[2]": "skils.logo",
-    "populate[3]": "gettingStarted"
+    "populate[3]": "gettingStarted",
+    "populate[4]": "projects",
+    "populate[5]": "projects.photo",
   }
 })
 
-const { skils, gettingStarted } = content.value.data.attributes
+const { skils, gettingStarted, projects } = content.value.data.attributes
 </script>
 
 <template>
@@ -16,11 +18,17 @@ const { skils, gettingStarted } = content.value.data.attributes
     <div class="h-[calc(100vh-2rem)]">
       <div class="h-full flex justify-center">
         <div class="container flex flex-col gap-28 w-[60rem] py-8 overflow-y-scroll !overflow-x-visible">
+          <div id="home" class="item block xl:hidden">
+            <Home />
+          </div>
           <div id="skils" class="item">
             <Skils :skils="skils" />
           </div>
           <div id="getting-started" class="item">
             <GettingStarted :gettingStarted="gettingStarted" />
+          </div>
+          <div id="projects" class="item">
+            <Projects :projects="projects" />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const { City, email, additionalWork, photo, socialMedias } = userInformation.val
     </div>
     <div class="w-full h-[20rem] bg-slate-300 rounded-3xl overflow-hidden">
         <img :src="`http://localhost:1337${photo.data.attributes.url}`"
-            class="w-full h-full object-cover object-top rounded-top" alt="">
+            class="w-full h-full object-cover object-center rounded-top" alt="">
     </div>
     <div class="flex flex-col">
         <span class="md:text-xl xl:text-3xl">{{ email }}</span>
@@ -23,9 +23,9 @@ const { City, email, additionalWork, photo, socialMedias } = userInformation.val
         <p class="md:text-sm xl:text-xl text-center text-gray-400">© 2023 Akam All Rights Reserved</p>
     </div>
     <div class="flex justify-center gap-6">
-        <div v-for="socialMedia in socialMedias" class="xl:w-20 xl:h-20 rounded-full border">
-            <a :href="socialMedia.link" class="w-full h-full flex justify-center items-center">
-                <img class="w-10 icon-color" :src="`http://localhost:1337${socialMedia.icon.data.attributes.url}`" alt="">
+        <div v-for="(item, index) in socialMedias" :key="index" class="xl:w-20 xl:h-20 rounded-full border">
+            <a :href="item.link" class="w-full h-full flex justify-center items-center">
+                <img class="w-10 icon-color" :src="`http://localhost:1337${item.icon.data.attributes.url}`" alt="">
             </a>
         </div>
     </div>

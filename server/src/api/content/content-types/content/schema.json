@@ -25,6 +25,13 @@
       "repeatable": true,
       "component": "getting-started.getting-started",
       "required": true
+    },
+    "projects": {
+      "displayName": "projects",
+      "type": "component",
+      "repeatable": true,
+      "component": "projects.projects",
+      "required": true
     }
   }
 }
