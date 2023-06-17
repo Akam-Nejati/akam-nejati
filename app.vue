@@ -15,10 +15,10 @@ const { skils, gettingStarted, projects } = content.value.data.attributes
 
 <template>
   <NuxtLayout>
-    <div class="h-[calc(100vh-2rem)]">
-      <div class="h-full flex justify-center">
-        <div class="container flex flex-col gap-28 w-[60rem] py-8 overflow-y-scroll !overflow-x-visible">
-          <div id="home" class="item block xl:hidden">
+    <div class="h-screen md:h-[calc(100vh-2rem)] w-full">
+      <div class="w-full h-full flex justify-center">
+        <div class="main w-full flex flex-col gap-28 px-4 py-8 overflow-y-scroll !overflow-x-visible">
+          <div id="home" class="item w-full block md:hidden">
             <Home />
           </div>
           <div id="skils" class="item">
@@ -38,10 +38,10 @@ const { skils, gettingStarted, projects } = content.value.data.attributes
 
 <style>
 body {
-  @apply bg-zinc-900 text-gray-300 p-4 h-screen overflow-hidden
+  @apply bg-zinc-900 text-gray-300 h-screen overflow-hidden
 }
 
-/* .container {
+/* .main {
   scroll-snap-type: y mandatory;
 }
  */
@@ -49,20 +49,20 @@ body {
   scroll-margin: 0;
 } */
 
-.container {
+.main {
   scroll-behavior: smooth;
 }
 
-.container::-webkit-scrollbar {
+.main::-webkit-scrollbar {
   width: 0em;
   opacity: 0;
 }
 
-.container::-webkit-scrollbar-track {
+.main::-webkit-scrollbar-track {
   opacity: 0;
 }
 
-.container::-webkit-scrollbar-thumb {
+.main::-webkit-scrollbar-thumb {
   opacity: 0;
 }
 </style>
