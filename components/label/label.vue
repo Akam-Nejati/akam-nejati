@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-    <div class="px-4 py-1 border border-gray-300 rounded-full inline-block shadow-xl">
+    <div class="px-4 py-1 border border-zinc-600 rounded-full inline-block shadow-xl">
         <div class="flex justify-center items-center gap-4">
             <div>
                 <Icon :name="icon_name" class="text-lg xl:text-xl" />
