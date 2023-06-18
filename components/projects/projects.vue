@@ -2,8 +2,6 @@
 const props = defineProps<{
     projects: any
 }>()
-
-console.log(props.projects);
 </script>
 
 <template>

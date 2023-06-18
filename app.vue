@@ -41,14 +41,6 @@ body {
   @apply bg-zinc-900 text-gray-300 h-screen overflow-hidden
 }
 
-/* .main {
-  scroll-snap-type: y mandatory;
-}
- */
-/* .item {
-  scroll-margin: 0;
-} */
-
 .main {
   scroll-behavior: smooth;
 }

@@ -1,11 +1,9 @@
 <script setup lang="ts">
+import thisYear from "~/stores/thisYear"
+
 const props = defineProps<{
     gettingStarted: any
 }>()
-
-const thisYear = new Date().getFullYear()
-console.log(thisYear);
-
 </script>
 
 <template>
