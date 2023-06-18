@@ -9,12 +9,8 @@ console.log(thisYear);
 </script>
 
 <template>
-    <div class="w-[11.5rem] px-4 py-1 border border-gray-300 rounded-full flex justify-between items-center shadow-xl">
-        <div>
-            <Icon name="gis:flag-start-b" class="text-xl" />
-        </div>
-        <span class="text-gray-300 ml-2">Getting started</span>
-    </div>
+    <Label icon_name="gis:flag-start-b" title="Getting started"/>
+
     <div class="mt-8">
         <div class="flex flex-col-reverse px-3">
             <div v-for="(item, index) in gettingStarted" :key="index" class="border-l-2 relative" :class="{'border-green-400': +item.date === thisYear}">

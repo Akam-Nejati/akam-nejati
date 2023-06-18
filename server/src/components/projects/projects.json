@@ -21,14 +21,6 @@
     "github": {
       "type": "string",
       "required": true
-    },
-    "photo": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
     }
   }
 }
