@@ -82,13 +82,3 @@ const skils: Skil[] = [
         </div>
     </div>
 </template>
-
-
-<style>
-.typed-cursor::after {
-    content: "_";
-    margin-left: 2px;
-    font-size: 3rem;
-    color: #4ADE80;
-}
-</style>

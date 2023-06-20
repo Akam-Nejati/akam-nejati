@@ -1,9 +1,21 @@
 <script setup lang="ts">
 import thisYear from "~/stores/thisYear"
+import GettingStartedPoint from "~/types/gettingStartedPoint.interface";
 
-const props = defineProps<{
-    gettingStarted: any
-}>()
+const gettingStarted: GettingStartedPoint[] = [
+    {
+        date: "2019",
+        discription: "Start of activity in the field of front end"
+    },
+    {
+        date: "2021",
+        discription: "Start learning vue js",
+    },
+    {
+        date: "2023",
+        discription: "Start learning nuxt js",
+    }
+]
 </script>
 
 <template>
