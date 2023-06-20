@@ -1,7 +1,26 @@
 <script setup lang="ts">
-const props = defineProps<{
-    projects: any
-}>()
+import Project from '~/types/project.interface';
+
+const projects: Project[] = [
+    {
+        title: "Qwitter",
+        discription: "a small app same to twitter with vue js and vuetify",
+        preview: "https://qwitter.iran.liara.run/home",
+        github: "https://github.com/Akam-Nejati/qwitter"
+    },
+    {
+        title: "dashboard",
+        discription: "a simple admin dashboard using vue and primevue",
+        preview: "https://dashboard-admin-app.netlify.app/",
+        github: "https://github.com/Akam-Nejati/dashboard"
+    },
+    {
+        title: "code converter ai",
+        discription: "an app to convert code with chat gpt, vue js and tailwind css",
+        preview: "https://code-converter-ai.netlify.com/",
+        github: "https://github.com/Akam-Nejati/code-converter-ai"
+    },
+]
 </script>
 
 <template>
