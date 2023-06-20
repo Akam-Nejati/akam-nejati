@@ -1,18 +1,3 @@
-<script setup lang="ts">
-const { data: content }: { data: Ref<any> } = await useFetch("http://localhost:1337/api/content", {
-  params: {
-    "populate[0]": "*",
-    "populate[1]": "skils",
-    "populate[2]": "skils.logo",
-    "populate[3]": "gettingStarted",
-    "populate[4]": "projects",
-    "populate[5]": "projects.photo",
-  }
-})
-
-const { skils, gettingStarted, projects } = content.value.data.attributes
-</script>
-
 <template>
   <NuxtLayout>
     <div class="h-screen md:h-[calc(100vh-2rem)] w-full">
@@ -22,13 +7,13 @@ const { skils, gettingStarted, projects } = content.value.data.attributes
             <Home />
           </div>
           <div id="skils" class="item">
-            <Skils :skils="skils" />
+            <Skils />
           </div>
           <div id="getting-started" class="item">
-            <GettingStarted :gettingStarted="gettingStarted" />
+            <GettingStarted/>
           </div>
           <div id="projects" class="item">
-            <Projects :projects="projects" />
+            <Projects />
           </div>
         </div>
       </div>
