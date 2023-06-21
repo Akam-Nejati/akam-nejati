@@ -1,1 +1,1 @@
- 👦🏻 My portfolio: akam-nejati.netlify.app
+ 👦🏻 My portfolio: https://akam-nejati.netlify.app
