@@ -18,7 +18,7 @@ const socialMedias: SocialMedia[] = [
 </script>
 
 <template>
-    <div class="flex justify-between items-top flex-col sm:flex-row md:flex-col md:gap-2 xl:flex-row xl-gap-0">
+    <div class="flex justify-between items-top flex-col sm:flex-row md:flex-col md:gap-2 xl:flex-row gap-4">
         <span class="text-2xl xl:text-4xl">Akam Nejati</span>
         <div class="flex flex-col">
             <span class="text-xl text-gray-400 w-full xl:w-[12rem]">Front-end developer _ vue js</span>
