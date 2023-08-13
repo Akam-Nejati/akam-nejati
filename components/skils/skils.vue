@@ -6,6 +6,7 @@ import scssIcon from "~/assets/icons/Sass_Logo_Color.svg"
 import bootstrapIcon from "~/assets/icons/bootstrap-svgrepo-com.svg"
 import tailwindIcon from "~/assets/icons/Tailwind_CSS_Logo.svg"
 import jsIcon from "~/assets/icons/Unofficial_JavaScript_logo_2.svg"
+import tsIcon from "~/assets/icons/Typescript.svg"
 import vuejsIcon from "~/assets/icons/Vue.js_Logo_2.svg"
 import quasarIcon from "~/assets/icons/quasar-svgrepo-com 1.svg"
 import vuetifyIcon from "~/assets/icons/vuetify.svg"
@@ -38,6 +39,10 @@ const skils: Skil[] = [
     {
         name: "Js",
         icon: jsIcon
+    },
+    {
+        name: "ts",
+        icon: tsIcon
     },
     {
         name: "Vue js",

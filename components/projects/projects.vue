@@ -11,13 +11,13 @@ const projects: Project[] = [
     {
         title: "dashboard",
         discription: "a simple admin dashboard using vue and primevue",
-        preview: "https://dashboard-admin-app.netlify.app/",
+        preview: "https://dashboard-swart-kappa.vercel.app/",
         github: "https://github.com/Akam-Nejati/dashboard"
     },
     {
         title: "code converter ai",
         discription: "an app to convert code with chat gpt, vue js and tailwind css",
-        preview: "https://code-converter-ai.netlify.com/",
+        preview: "https://code-converter-ai.vercel.app/",
         github: "https://github.com/Akam-Nejati/code-converter-ai"
     },
 ]
