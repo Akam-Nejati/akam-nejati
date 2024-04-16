@@ -1,3 +1,16 @@
+<script setup lang="ts">
+useHead({
+  meta:[{
+    name: "title",
+    content: "Akam Nejati"
+  }],
+  htmlAttrs: {
+    lang: "en"
+  }
+})
+</script>
+
+
 <template>
   <NuxtLayout>
     <div class="h-screen md:h-[calc(100vh-2rem)] w-full">

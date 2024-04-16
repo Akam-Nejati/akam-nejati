@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import thisYear from "~/stores/thisYear"
-import SocialMedia from "~/types/socialMedia.interface";
+import type SocialMedia from "~/types/socialMedia.interface";
 import githubIcon from "~/assets/icons/iconmonstr-github-1.svg"
 import telegramIcon from "~/assets/icons/icons8-telegram.svg"
 
 
 const socialMedias: SocialMedia[] = [
     {
+        name: "github",
         icon: githubIcon,
         link: "https://github.com/Akam-Nejati"
     },
     {
+        name: "telegram",
         icon: telegramIcon,
         link: "https://t.me/Akam_320"
     }
@@ -25,7 +27,7 @@ const socialMedias: SocialMedia[] = [
         </div>
     </div>
     <div class="w-full h-[20rem] bg-slate-300 rounded-3xl overflow-hidden">
-        <img src="~/assets/images/Pixoro-3c3188a68b91c940ae5a4e957548a265.jpg"
+        <img src="~/assets/images/_83c5df42-91ff-465d-b287-0a8f101332be.webp"
             class="w-full h-full object-cover object-center rounded-top" alt="">
     </div>
     <div class="flex flex-col">
@@ -38,8 +40,8 @@ const socialMedias: SocialMedia[] = [
     </div>
     <div class="flex justify-center gap-6">
         <div v-for="(socialMedia, index) in socialMedias" :key="index" class="xl:w-20 xl:h-20 rounded-full border">
-            <a :href="socialMedia.link" class="w-full h-full flex justify-center items-center">
-                <img class="w-10 icon-color" :src="socialMedia.icon" alt="">
+            <a :href="socialMedia.link" :aria-label="socialMedia.name" class="w-full h-full flex justify-center items-center">
+                <img class="w-10 icon-color" :src="socialMedia.icon">
             </a>
         </div>
     </div>
