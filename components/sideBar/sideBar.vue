@@ -38,7 +38,7 @@ const socialMedias: SocialMedia[] = [
     </div>
     <div class="w-full h-[20rem] bg-slate-300 rounded-3xl overflow-hidden">
         <img src="~/assets/images/_83c5df42-91ff-465d-b287-0a8f101332be.webp"
-            class="w-full h-full object-cover object-center rounded-top" alt="profile image" loading="lazy">
+            class="w-full h-full object-cover object-center rounded-top" alt="profile image">
     </div>
     <div class="flex flex-col">
         <span class="text-xl xl:text-3xl">mr.akam.320@gmail.com</span>
