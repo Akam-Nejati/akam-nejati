@@ -5,6 +5,16 @@ import githubIcon from "~/assets/icons/iconmonstr-github-1.svg"
 import telegramIcon from "~/assets/icons/icons8-telegram.svg"
 
 
+useHead({
+    link: [
+        {
+            rel: "preload",
+            as: "image",
+            href: "~/assets/images/_83c5df42-91ff-465d-b287-0a8f101332be.webp"
+        }
+    ]
+})
+
 const socialMedias: SocialMedia[] = [
     {
         name: "github",
@@ -28,7 +38,7 @@ const socialMedias: SocialMedia[] = [
     </div>
     <div class="w-full h-[20rem] bg-slate-300 rounded-3xl overflow-hidden">
         <img src="~/assets/images/_83c5df42-91ff-465d-b287-0a8f101332be.webp"
-            class="w-full h-full object-cover object-center rounded-top" alt="">
+            class="w-full h-full object-cover object-center rounded-top" alt="profile image" loading="lazy">
     </div>
     <div class="flex flex-col">
         <span class="text-xl xl:text-3xl">mr.akam.320@gmail.com</span>
@@ -40,8 +50,9 @@ const socialMedias: SocialMedia[] = [
     </div>
     <div class="flex justify-center gap-6">
         <div v-for="(socialMedia, index) in socialMedias" :key="index" class="xl:w-20 xl:h-20 rounded-full border">
-            <a :href="socialMedia.link" :aria-label="socialMedia.name" class="w-full h-full flex justify-center items-center">
-                <img class="w-10 icon-color" :src="socialMedia.icon">
+            <a :href="socialMedia.link" :aria-label="socialMedia.name"
+                class="w-full h-full flex justify-center items-center">
+                <img class="w-10 icon-color" :src="socialMedia.icon" :alt="socialMedia.name">
             </a>
         </div>
     </div>

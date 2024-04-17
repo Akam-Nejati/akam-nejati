@@ -1,12 +1,9 @@
 <script setup lang="ts">
 useHead({
-  meta:[{
-    name: "title",
-    content: "Akam Nejati"
-  }],
+  title: "Akam Nejati",
   htmlAttrs: {
     lang: "en"
-  }
+  },
 })
 </script>
 

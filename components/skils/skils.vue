@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Skil from '~/types/skil.interface';
+import type Skil from '~/types/skil.interface';
 import htmlIcon from "~/assets/icons/html-1.svg"
 import cssIcon from "~/assets/icons/w3_css-icon.svg"
 import scssIcon from "~/assets/icons/Sass_Logo_Color.svg"
