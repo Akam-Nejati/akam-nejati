@@ -4,6 +4,12 @@ useHead({
   htmlAttrs: {
     lang: "en"
   },
+  meta:[
+    {
+      name: "description",
+      content: "Hello Im Akam, A front-end Vue developer from iran"
+    }
+]
 })
 </script>
 
