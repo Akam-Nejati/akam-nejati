@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Project from '~/types/project.interface';
+import type Project from '~/types/project.interface';
 
 const projects: Project[] = [
     {
@@ -9,14 +9,28 @@ const projects: Project[] = [
         github: "https://github.com/Akam-Nejati/qwitter"
     },
     {
-        title: "dashboard",
+        title: "Dashboard",
         discription: "a simple admin dashboard using vue and primevue",
         preview: "https://dashboard-swart-kappa.vercel.app/",
         github: "https://github.com/Akam-Nejati/dashboard"
     },
     {
-        title: "code converter ai",
+        title: "Code converter ai",
         discription: "an app to convert code with chat gpt, vue js and tailwind css",
+        preview: "https://code-converter-ai.vercel.app/",
+        github: "https://github.com/Akam-Nejati/code-converter-ai"
+    },
+    {
+        openSorce: false,
+        title: "Petro engine",
+        discription: "a shoping website like Divar. (website and dashboard, for admin and users)",
+        preview: "https://code-converter-ai.vercel.app/",
+        github: "https://github.com/Akam-Nejati/code-converter-ai"
+    },
+    {
+        openSorce: false,
+        title: "boomilia",
+        discription: "a architecture web site like Pintrest. (nuxt3)",
         preview: "https://code-converter-ai.vercel.app/",
         github: "https://github.com/Akam-Nejati/code-converter-ai"
     },
@@ -41,7 +55,7 @@ const projects: Project[] = [
 
                     <div class="flex gap-4">
                         <a :href="item.preview" class="text-zinc-900 p-3 rounded-xl bg-gray-300 shadow-xl">preview</a>
-                        <a :href="item.github" class="text-zinc-900 p-3 rounded-xl bg-green-400 shadow-xl">github</a>
+                        <a :href="item.github" class="text-zinc-900 p-3 rounded-xl bg-green-400 shadow-xl" v-if="item.openSorce !== false">github</a>
                     </div>
                 </div>
 

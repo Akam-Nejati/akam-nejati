@@ -10,6 +10,7 @@ import tsIcon from "~/assets/icons/Typescript.svg"
 import vuejsIcon from "~/assets/icons/Vue.js_Logo_2.svg"
 import quasarIcon from "~/assets/icons/quasar-svgrepo-com 1.svg"
 import vuetifyIcon from "~/assets/icons/vuetify.svg"
+import primeVueIcon from "~/assets/icons/primevue-logo.svg"
 import piniaIcon from "~/assets/icons/pinia-seeklogo.com.svg"
 import nuxtIcon from "~/assets/icons/nuxt-2.svg"
 import gitIcon from "~/assets/icons/git-icon-logo-svgrepo-com.svg"
@@ -55,6 +56,10 @@ const skils: Skil[] = [
     {
         name: "Vuetify",
         icon: vuetifyIcon
+    },
+    {
+        name: "Prime vue",
+        icon: primeVueIcon
     },
     {
         name: "Pinia",
