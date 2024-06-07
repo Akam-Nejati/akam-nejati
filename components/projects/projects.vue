@@ -6,15 +6,15 @@ const projects: Project[] = [
         openSorce: false,
         title: "Petro engine",
         discription: "a shoping website like Divar. (website and dashboard, for admin and users)",
-        preview: "https://code-converter-ai.vercel.app/",
-        github: "https://petro-engine.vercel.app"
+        preview: "https://petro-engine.vercel.app",
+        github: "",
     },
     {
         openSorce: false,
         title: "boomilia",
         discription: "a architecture web site like Pintrest. (nuxt3)",
-        preview: "https://code-converter-ai.vercel.app/",
-        github: "https://boomilia.com"
+        preview: "https://boomilia.com",
+        github: "",
     },
     {
         title: "Qwitter",
